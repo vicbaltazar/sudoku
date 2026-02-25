@@ -1,32 +1,32 @@
 # Sudoku
 
-Aplicação web de Sudoku feita em React, consumindo uma API para gerar novos tabuleiros automaticamente.
+Sudoku web application built with React, consuming an external API to automatically generate new boards.
 
-## Tecnologias
+## Technologies
 
 - React
 - Vite
-- JavaScript
+- TypeScript
 - CSS
 - Sudoku API (`https://sudoku-api.vercel.app`)
 
 ## Demo
 
-Acesse o projeto online:  
-https://sudoku-vicbaltazar.netlify.app/
+Live project:  
+[https://sudoku-vicbaltazar.netlify.app/](https://sudoku-vicbaltazar.netlify.app/)
 
-## Funcionalidades
+## Features
 
-- Geração de novos jogos pela API
-- Destaque de linha, coluna e bloco 3x3 da célula selecionada
-- Botão **Check** para verificar se a solução está correta
-- Botão **Reset** para voltar ao estado inicial do puzzle
-- Botão **New Puzzle** para carregar um novo tabuleiro
+- Generate new puzzles from the API
+- Highlight row, column, and 3x3 box of the selected cell
+- **Check** button to validate the current solution
+- **Reset** button to restore the initial puzzle state
+- **New Puzzle** button to load a fresh board
 
-## Como rodar o projeto
+## How to run locally
 
 ```bash
 git clone https://github.com/vicbaltazar/sudoku.git
-cd sudoku
+cd sudoku/sudoku
 npm install
 npm run dev
