@@ -1,0 +1,78 @@
+:root {
+  --verde limão: #9BC264;
+  --verde claro: #A8DF8E;
+  --verde pastel: #F0FFDF;
+}
+
+.container {
+  border-radius: 8px;
+  padding: 16px;
+  background: #F0FFDF;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.cell {
+  border: 1px solid #999;
+  padding: 0;
+}
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+  border-right: 3px solid #9BC264;
+}
+
+.cell:nth-child(1) {
+  border-left: 3px solid #9BC264;
+}
+
+.table tr:nth-child(3) .cell,
+.table tr:nth-child(6) .cell,
+.table tr:nth-child(9) .cell {
+  border-bottom: 3px solid #9BC264;
+}
+.table tr:nth-child(1) .cell {
+  border-top: 3px solid #9BC264;
+}
+
+input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 23px;
+  border: none;
+  outline: none;
+  background: inherit;
+  color: black;
+  cursor: default;
+}
+
+input:focus {
+  background: #9BC264;
+  caret-color: transparent;
+}
+
+.same-row,
+.same-col,
+.same-box {
+  background: #A8DF8E;
+}
+
+.status {
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  background-color: black;
+  padding: 10px 25px;
+  border-radius: 10px;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.green {
+  background-color: #a6f1a6;
+  transition: background-color 0.3s ease;
+}
