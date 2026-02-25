@@ -11,7 +11,8 @@ Aplicação web de Sudoku feita em React, consumindo uma API para gerar novos ta
 - Sudoku API (`https://sudoku-api.vercel.app`)
 
 ## Demo
-Acesse o projeto online:
+
+Acesse o projeto online:  
 https://sudoku-vicbaltazar.netlify.app/
 
 ## Funcionalidades
