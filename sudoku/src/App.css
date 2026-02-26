@@ -7,29 +7,41 @@
 .container {
   border-radius: 8px;
   padding: 16px;
-  background: var(--verde-pastel);
-  width: 100%;
-  max-width: 420px;   /* limita a largura no mobile */
-  margin: 0 auto;     /* centraliza */
+  background: #F0FFDF;
 }
 
 .table {
   border-collapse: collapse;
-  width: 100%;
-  table-layout: fixed; /* células com mesma largura */
 }
 
 .cell {
   border: 1px solid #999;
   padding: 0;
 }
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+  border-right: 3px solid #9BC264;
+}
 
-/* inputs apenas dentro das células */
-.cell input {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+.cell:nth-child(1) {
+  border-left: 3px solid #9BC264;
+}
+
+.table tr:nth-child(3) .cell,
+.table tr:nth-child(6) .cell,
+.table tr:nth-child(9) .cell {
+  border-bottom: 3px solid #9BC264;
+}
+.table tr:nth-child(1) .cell {
+  border-top: 3px solid #9BC264;
+}
+
+input {
+  width: 50px;
+  height: 50px;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 23px;
   border: none;
   outline: none;
   background: inherit;
@@ -37,39 +49,17 @@
   cursor: default;
 }
 
-.cell input:focus {
-  background: var(--verde-limao);
+input:focus {
+  background: #9BC264;
   caret-color: transparent;
 }
 
-.cell:nth-child(3),
-.cell:nth-child(6),
-.cell:nth-child(9) {
-  border-right: 3px solid var(--verde-limao);
-}
-
-.cell:nth-child(1) {
-  border-left: 3px solid var(--verde-limao);
-}
-
-.table tr:nth-child(3) .cell,
-.table tr:nth-child(6) .cell,
-.table tr:nth-child(9) .cell {
-  border-bottom: 3px solid var(--verde-limao);
-}
-
-.table tr:nth-child(1) .cell {
-  border-top: 3px solid var(--verde-limao);
-}
-
-/* Destaques de linha/coluna/bloco */
 .same-row,
 .same-col,
 .same-box {
-  background: var(--verde-claro);
+  background: #A8DF8E;
 }
 
-/* Status popup */
 .status {
   font-weight: bold;
   position: absolute;
@@ -77,20 +67,12 @@
   background-color: black;
   padding: 10px 25px;
   border-radius: 10px;
+
   left: 50%;
   transform: translateX(-50%);
-  color: white;
 }
 
-/* Animação dos verdes ao acertar */
 .green {
   background-color: #a6f1a6;
   transition: background-color 0.3s ease;
-}
-
-/* Ajuste em telas muito pequenas */
-@media (max-width: 360px) {
-  .cell input {
-    font-size: 1.1rem;
-  }
 }
