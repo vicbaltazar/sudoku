@@ -76,3 +76,9 @@ input:focus {
   background-color: #a6f1a6;
   transition: background-color 0.3s ease;
 }
+
+@media (max-width: 480px) {
+  .container {
+        padding: 24px 16px 32px;
+    }
+}
